@@ -3,8 +3,16 @@
 @tailwind utilities;
 
 :root {
+  --color-primary: #0D5793; /* Default primary color */
+  --color-secondary: #D4E2E1; /* Default secondary color */
+  --color-light-bg: #354d527c;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: var(--color-secondary);
+  background-color: var(--color-light-bg);
+}
+
+body {
+  max-width: 1200px;
+  margin: auto
 }

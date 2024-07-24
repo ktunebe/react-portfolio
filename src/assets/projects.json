@@ -1,0 +1,38 @@
+[
+  {
+    "title": "App 1",
+    "description": "Blah blah blah...",
+    "url": "https://google.com",
+    "imgSrc": "./src/assets/kent-photo.jpg"
+  },
+  {
+    "title": "App 2",
+    "description": "Blah blah blah...",
+    "url": "https://google.com",
+    "imgSrc": "https://avatars.githubusercontent.com/u/17594101?s=96&v=4"
+  },
+  {
+    "title": "App 3",
+    "description": "Blah blah blah...",
+    "url": "https://google.com",
+    "imgSrc": "./src/assets/kent-photo.jpg"
+  },
+  {
+    "title": "App 4",
+    "description": "Blah blah blah...",
+    "url": "https://google.com",
+    "imgSrc": "https://avatars.githubusercontent.com/u/17594101?s=96&v=4"
+  },
+  {
+    "title": "App 5",
+    "description": "Blah blah blah...",
+    "url": "https://google.com",
+    "imgSrc": "./src/assets/kent-photo.jpg"
+  },
+  {
+    "title": "App 6",
+    "description": "Blah blah blah...",
+    "url": "https://google.com",
+    "imgSrc": "https://avatars.githubusercontent.com/u/17594101?s=96&v=4"
+  }
+]
