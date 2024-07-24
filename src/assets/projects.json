@@ -1,38 +1,44 @@
 [
   {
-    "title": "App 1",
-    "description": "Blah blah blah...",
-    "url": "https://google.com",
-    "imgSrc": "./src/assets/kent-photo.jpg"
+    "title": "Dungeons and Dragonites",
+    "description": "A dungeon crawl game using PokeAPI and D&D 5e API. Use a random Pokémon to fight an endless barrage of D&D monsters.",
+    "url": "https://github.com/ktunebe/dungeons_and_dragonites",
+    "imgSrc": "./src/assets/d-d-battle.png"
   },
   {
-    "title": "App 2",
-    "description": "Blah blah blah...",
-    "url": "https://google.com",
-    "imgSrc": "https://avatars.githubusercontent.com/u/17594101?s=96&v=4"
+    "title": "console.blog",
+    "description": "A blog allowing users to add posts and comment on others using a Model-View-Controller Framework and a PostgreSQL database.",
+    "url": "https://github.com/ktunebe/magnificent-virtual-compositions-tech-blog",
+    "imgSrc": "./src/assets/blog-dashboard.png"
   },
   {
-    "title": "App 3",
-    "description": "Blah blah blah...",
-    "url": "https://google.com",
-    "imgSrc": "./src/assets/kent-photo.jpg"
+    "title": "Weather Dashboard",
+    "description": "A weather dashboard that will display the current weather and five day forecast for a selected city using the OpenWeather API.",
+    "url": "https://github.com/ktunebe/weather-dashboard",
+    "imgSrc": "./src/assets/weather-dashboard-page.png"
   },
   {
-    "title": "App 4",
-    "description": "Blah blah blah...",
-    "url": "https://google.com",
-    "imgSrc": "https://avatars.githubusercontent.com/u/17594101?s=96&v=4"
+    "title": "Employee Database Manager",
+    "description": "A command line application to manage a company's employee database using Node.js, Inquirer and PostgreSQL.",
+    "url": "https://github.com/ktunebe/sql-employee-db",
+    "imgSrc": "./src/assets/employee-tracker.png"
   },
   {
-    "title": "App 5",
-    "description": "Blah blah blah...",
-    "url": "https://google.com",
-    "imgSrc": "./src/assets/kent-photo.jpg"
+    "title": "Task Board",
+    "description": "A task board made using JQuery UI with draggable/droppable tasks and lanes specifying their progress.",
+    "url": "https://github.com/ktunebe/jquery-task-board",
+    "imgSrc": "./src/assets/task-board-page.png"
   },
   {
-    "title": "App 6",
-    "description": "Blah blah blah...",
-    "url": "https://google.com",
-    "imgSrc": "https://avatars.githubusercontent.com/u/17594101?s=96&v=4"
+    "title": "Dice Roller",
+    "description": "A test for developing a dice rolling companion app. It uses JavaScript logic to roll a number of attack and defense dice and calculates damage based on the enemy's stats and the weapon being used.",
+    "url": "https://github.com/ktunebe/dice-roller",
+    "imgSrc": "./src/assets/dice-roller-1.png"
+  },
+  {
+    "title": "NoSQL Social Network",
+    "description": "A back end for a social network API using express, MongoDB and the Mongoose npm.",
+    "url": "https://github.com/ktunebe/social-network-api",
+    "imgSrc": "./src/assets/social-network.png"
   }
 ]

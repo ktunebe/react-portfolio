@@ -13,14 +13,20 @@ export default function Project({ title, description, url, imgSrc, index }) {
   const nextIndex = findNextIndex()
   
   return (
-    <div id={`slide${index}`} className="carousel-item relative w-full">
-    <img
-      src={imgSrc}
-      alt={`Screenshot of ${title}`}
-      className="w-full" />
-    <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-      <a href={`#slide${prevIndex}`} className="btn btn-circle">❮</a>
-      <a href={`#slide${nextIndex}`} className="btn btn-circle">❯</a>
+    <div id={`project${index}`} className="carousel-item relative w-full">
+    <div>
+      <div>
+        <img
+          src={imgSrc}
+          alt={`Screenshot of ${title}`}
+          className="w-full border-2 border-primary p-2" />
+      </div>
+        <div className="flex justify-around my-4">
+          <a href={`#project${prevIndex}`} className="btn rounded-full border-2 border-white text-white">❮ Prev</a>
+          <a href={`#project${nextIndex}`} className="btn rounded-full border-2 border-white text-white">Next ❯</a>
+        </div>
+      <h3 className='text-3xl my-4'>{title}</h3>
+      <p>{description}</p>
     </div>
   </div>
   )

@@ -1,4 +1,4 @@
-const menuItems = [
+const navItems = [
 	{
 		href: '/',
 		label: 'About Me',
@@ -37,19 +37,19 @@ export default function Nav() {
 				<ul
 					tabIndex={0}
 					className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
-					{menuItems.map((menuItem) => {
+					{navItems.map((navItem) => {
 						return (
-							<a href={menuItem.href} key={menuItem.href} className="block">
-								{menuItem.label}
+							<a href={navItem.href} key={navItem.href} className="block">
+								{navItem.label}
 							</a>
 						)
 					})}
 				</ul>
 			</div>
 			<div className="hidden md:flex space-x-4">
-				{menuItems.map((menuItem) => (
-					<a href={menuItem.href} key={menuItem.href} className="btn">
-						{menuItem.label}
+				{navItems.map((navItem) => (
+					<a href={navItem.href} key={navItem.href} className="btn bg-light-bg text-secondary">
+						{navItem.label}
 					</a>
 				))}
 			</div>

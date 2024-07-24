@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 :root {
-  --color-primary: #0D5793; /* Default primary color */
-  --color-secondary: #D4E2E1; /* Default secondary color */
-  --color-light-bg: #354d527c;
+  --color-primary: #355E3B; /* Default primary color */
+  --color-secondary: #d4e2d4; /* Default secondary color */
+  --color-light-bg: #3642377c;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   color-scheme: light dark;
   color: var(--color-secondary);

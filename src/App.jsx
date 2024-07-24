@@ -2,15 +2,21 @@ import { useState } from 'react'
 
 import Header from './components/Header'
 import Project from './components/Project'
-import Carousel from './pages/Portfolio'
+import Portfolio from './pages/Portfolio'
 
 
 export default function App() {
 
 	return (
 		<>
+    <body className="mx-auto">
+
+
       <Header />
-      <Carousel />
+      <Portfolio />
+
+
+      </body>
 		</>
 	)
 }
