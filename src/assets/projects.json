@@ -40,5 +40,11 @@
     "description": "A back end for a social network API using express, MongoDB and the Mongoose npm.",
     "url": "https://github.com/ktunebe/social-network-api",
     "imgSrc": "./src/assets/social-network.png"
+  },
+  {
+    "title": "HoliDB",
+    "description": "A movie search database using the TMDB node package to find movies, tag them by holiday, or even create your own holiday. This uses PostgreSQL and Sequelize to keep track of users, movies and holidays.",
+    "url": "https://github.com/ktunebe/holiDB",
+    "imgSrc": "./src/assets/holiDB.png"
   }
 ]
