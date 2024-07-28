@@ -9,7 +9,8 @@ export default {
 			colors: {
 				primary: "var(--color-primary)",
 				secondary: "var(--color-secondary)",
-				lightBg: "var(--light-bg)",
+				lightBg: "var(--color-light-bg)",
+        skyBg: "var(--color-sky-bg)"
 			},
 		},
 	},

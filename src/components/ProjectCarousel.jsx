@@ -62,7 +62,7 @@ export default function ProjectCarousel({ projects, index, handleNextClick, hand
 				{/* Prev Btn */}
 				<button
 					onClick={() => handlePrevClick(index)}
-					className="btn max-[400px]:p-1 rounded-full border-2 border-white text-white">
+					className="btn max-[400px]:p-1 rounded-full border-2 bg-primary text-lightBg hover:text-primary">
 					❮ Prev
 				</button>
 				{/* Project Title */}
@@ -74,7 +74,7 @@ export default function ProjectCarousel({ projects, index, handleNextClick, hand
 				{/* Next Btn */}
 				<button
 					onClick={() => handleNextClick(index)}
-					className="btn max-[400px]:p-1 rounded-full border-2 border-white text-white">
+					className="btn max-[400px]:p-1 rounded-full border-2 bg-primary text-lightBg hover:text-primary">
 					Next ❯
 				</button>
 			</div>

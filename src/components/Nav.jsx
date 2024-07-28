@@ -48,7 +48,7 @@ export default function Nav() {
 			</div>
 			<div className="hidden md:flex space-x-4">
 				{navItems.map((navItem) => (
-					<a href={navItem.href} key={navItem.href} className="btn bg-light-bg text-secondary">
+					<a href={navItem.href} key={navItem.href} className="btn bg-primary text-lightBg">
 						{navItem.label}
 					</a>
 				))}
