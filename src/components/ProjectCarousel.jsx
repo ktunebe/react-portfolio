@@ -1,6 +1,11 @@
-
-export default function ProjectCarousel({ projects, index, handleNextClick, handlePrevClick, translateNextIndex, translatePrevIndex }) {
-
+export default function ProjectCarousel({
+	projects,
+	index,
+	handleNextClick,
+	handlePrevClick,
+	translateNextIndex,
+	translatePrevIndex,
+}) {
 	return (
 		<>
 			<div className="relative p-4">
@@ -58,7 +63,17 @@ export default function ProjectCarousel({ projects, index, handleNextClick, hand
 				/>
 			</div>
 
-			<div className="flex gap-3 items-center relative justify-between my-4 max-[400px]:px-1 px-3 w-full h-32">
+			<ul className="steps">
+				{projects.map((project) => {
+					return (
+						<li key={project.title} className={`step ${
+							project === projects[index] ? 'step-neutral' : ''
+						}`}></li>
+					)
+				})}
+			</ul>
+
+			<div className="flex gap-3 items-center relative justify-between my-2 max-[400px]:px-1 px-3 w-full">
 				{/* Prev Btn */}
 				<button
 					onClick={() => handlePrevClick(index)}
@@ -67,7 +82,7 @@ export default function ProjectCarousel({ projects, index, handleNextClick, hand
 				</button>
 				{/* Project Title */}
 				<div className="px-2">
-					<h3 className="text-xl sm:text-3xl lg:text-5xl my-4">{`${
+					<h3 className="text-xl sm:text-3xl lg:text-3xl my-4">{`${
 						projects[index].title
 					} (${index + 1}/${projects.length})`}</h3>
 				</div>
@@ -79,7 +94,10 @@ export default function ProjectCarousel({ projects, index, handleNextClick, hand
 				</button>
 			</div>
 			{/* Project Description */}
-			<p className="sm:text-xl">{projects[index].description}</p>
+			<p className="sm:text-lg">{projects[index].description}</p>
+			<a className="sm:text-lg underline" href={projects[index].githubUrl}>
+				{projects[index].title} GitHub Repo
+			</a>
 		</>
 	)
 }

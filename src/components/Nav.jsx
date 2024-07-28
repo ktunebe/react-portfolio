@@ -8,12 +8,12 @@ const navItems = [
 		label: 'Portfolio',
 	},
 	{
-		href: '/contact',
-		label: 'Contact Me',
-	},
-	{
 		href: '/resume',
 		label: 'Resume',
+	},
+	{
+		href: '/contact',
+		label: 'Contact Me',
 	},
 ]
 
@@ -48,7 +48,10 @@ export default function Nav() {
 			</div>
 			<div className="hidden md:flex space-x-4">
 				{navItems.map((navItem) => (
-					<a href={navItem.href} key={navItem.href} className="btn bg-primary text-lightBg">
+					<a
+						href={navItem.href}
+						key={navItem.href}
+						className="btn bg-primary text-lightBg">
 						{navItem.label}
 					</a>
 				))}
