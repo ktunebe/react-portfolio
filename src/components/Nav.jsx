@@ -42,7 +42,7 @@ export default function Nav() {
 				</div>
 				<ul
 					tabIndex={0}
-					className="dropdown-content menu bg-base-100 rounded-box z-[1] w-32 shadow">
+					className="border-2 border-primary dropdown-content menu bg-base-100 rounded-box z-[1] w-32 shadow bg-lightBg">
 					{navItems.map((navItem) => {
 						return (
 							<a href={navItem.href} key={navItem.href} className={`block p-2 text-center

@@ -21,14 +21,14 @@ export default function AboutPage() {
 							alt="Picture of Kent"></img>
 					</div>
 				</div>
-				<div className="min-h-[40vh] flex justify-between bg-lightBg">
-					<div className='w-1/2'>
+				<div className="min-h-[40vh] flex flex-col sm:flex-row justify-between bg-lightBg">
+					<div className='w-full sm:w-1/2'>
 						<img
 							className="object-cover w-full h-full"
 							src="/logos-images/stock-html.png"
 							alt="Stock photo of HTML code"></img>
 					</div>
-					<div className='self-center justify-center px-4 flex-initial w-1/2 py-12'>
+					<div className='self-center justify-center px-4 flex-initial w-full sm:w-1/2 py-12'>
 						<p className="sm:text-lg indent-8 my-4 px-4">
 							I currently live in Rockford, Illinois with my wife, Alex, and our two golden retrievers, Chester and Herbie. My hobbies include sports, video games and enjoying time with Alex and the dogs. After working as a dentist for 8 years, I made a career transition to web development, and bring I'll a fresh, well-rounded perspective to coding real world applications. 
 						</p>

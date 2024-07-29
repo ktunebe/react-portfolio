@@ -68,14 +68,14 @@ export default function ProjectCarousel({
 				</a>
 			</div>
 			{/* Steps to show how many projects to scroll through */}
-			<ul className="steps">
+			<ul className="justify-center pt-3 gap-2 flex flex-wrap">
 				{projects.map((project) => {
 					return (
 						<li
 							key={project.title}
-							className={`step ${
-								project === projects[index] ? 'step-neutral' : ''
-							}`}></li>
+							className={`px-2 rounded-full ${
+								project === projects[index] ? 'bg-skyBg' : ''
+							}`}>{projects.indexOf(project) + 1}</li>
 					)
 				})}
 			</ul>
