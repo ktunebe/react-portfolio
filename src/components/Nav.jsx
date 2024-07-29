@@ -1,3 +1,5 @@
+import { useLocation } from 'react-router-dom'
+
 const navItems = [
 	{
 		href: '/',
@@ -18,15 +20,19 @@ const navItems = [
 ]
 
 export default function Nav() {
+	const location = useLocation()
+    
+	const isActive = (path) => location.pathname === path
+
 	return (
 		<div>
 			<div className="dropdown dropdown-bottom dropdown-end md:hidden">
-				<div tabIndex={0} role="button" className="btn m-1">
+				<div tabIndex={0} role="button" className="btn m-1 bg-primary">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						fill="none"
 						viewBox="0 0 24 24"
-						className="inline-block h-5 w-5 stroke-current">
+						className="inline-block h-5 w-5 stroke-current fill-current text-lightBg">
 						<path
 							strokeLinecap="round"
 							strokeLinejoin="round"
@@ -36,10 +42,12 @@ export default function Nav() {
 				</div>
 				<ul
 					tabIndex={0}
-					className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+					className="dropdown-content menu bg-base-100 rounded-box z-[1] w-32 shadow">
 					{navItems.map((navItem) => {
 						return (
-							<a href={navItem.href} key={navItem.href} className="block">
+							<a href={navItem.href} key={navItem.href} className={`block p-2 text-center
+							${isActive(navItem.href) ? 'border-2 rounded-xl border-primary' : ''}
+							`}>
 								{navItem.label}
 							</a>
 						)
@@ -51,7 +59,9 @@ export default function Nav() {
 					<a
 						href={navItem.href}
 						key={navItem.href}
-						className="btn bg-primary text-lightBg hover:text-secondary">
+						className={`btn bg-primary text-lightBg hover:text-secondary
+							${isActive(navItem.href) ? 'bg-skyBg text-primary' : ''}
+						`}>
 						{navItem.label}
 					</a>
 				))}

@@ -5,7 +5,7 @@ export default function ContactForm({
 }) {
 	return (
 		<>
-			<form className="form border-2 rounded-2xl p-6 w-9/10 mx-auto" onSubmit={handleFormSubmit}>
+			<form className="form p-6 w-9/10 mx-auto" onSubmit={handleFormSubmit}>
 				<label className="form-control w-full max-w-xs">
 					<div className="label">
 						<span className="label-text text-base md:text-lg">Name</span>

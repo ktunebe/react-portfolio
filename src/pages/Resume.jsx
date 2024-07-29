@@ -1,9 +1,21 @@
-import { Outlet } from "react-router-dom"
+import { Outlet } from 'react-router-dom'
 
 export default function ResumePage() {
-  return (
-    <>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod cum dicta, et possimus quisquam perferendis ea vitae velit. Fugit eveniet, consequatur vero enim corrupti cupiditate debitis quisquam atque sint pariatur.</p>
-    </>
-  )
+	return (
+		<>
+			<div className="">
+				<div className='text-center m-2'>
+					<a
+						href="../src/assets/my-portfolio/kent-tuneberg-resume.pdf"
+						download>
+						Download PDF
+					</a>
+				</div>
+				<iframe
+					className="h-[75vh] w-[90%] mx-auto"
+					src="../src/assets/my-portfolio/kent-tuneberg-resume.pdf"
+				/>
+			</div>
+		</>
+	)
 }

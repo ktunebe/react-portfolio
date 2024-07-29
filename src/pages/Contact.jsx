@@ -31,7 +31,7 @@ export default function ContactPage() {
 
   return (
     <>
-    <div className='container my-8 mx-auto text-center w-[80%]'>
+    <div className='container my-8 mx-auto text-center text-primary w-[80%]'>
       <h2 className='text-3xl sm:text-5xl font-bold mb-8'>Contact Me</h2>
 
       <ContactForm 
