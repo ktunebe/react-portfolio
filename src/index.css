@@ -17,3 +17,8 @@ body {
   max-width: 1200px;
   margin: auto;
 }
+
+@font-face {
+  font-family: 'Dubiel';
+  src: url('../src/assets/fonts/Quattrocento-Regular.ttf') format('truetype');
+}

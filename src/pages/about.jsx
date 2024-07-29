@@ -16,7 +16,7 @@ export default function AboutPage() {
 						</p>
 						<a href="/contact"><button className='button bg-secondary text-lightBg w-3/4 py-2 rounded-3xl'>Contact Me</button></a>
 					</div>
-					<div className='flex-none self-center h-36 sm:h-64 w-1/2'>
+					<div className='flex-none self-center h-48 sm:h-64 w-1/2'>
 						<img
 							className="object-contain w-full h-full"
 							src="./src/assets/kent-photo.jpg"

@@ -43,7 +43,7 @@ export default function ContactForm({
 						className="textarea textarea-bordered h-24 text-base md:text-lg bg-white text-black"
 						placeholder="Type Here"></textarea>
 				</label>
-				<button className="btn rounded-2xl md:text-lg bg-primary text-secondary my-3" type="submit">Submit</button>
+				<button className="btn rounded-2xl md:text-lg bg-primary text-lightBg hover:text-secondary my-3" type="submit">Submit</button>
 			</form>
 		</>
 	)

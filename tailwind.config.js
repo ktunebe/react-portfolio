@@ -12,6 +12,9 @@ export default {
 				lightBg: "var(--color-light-bg)",
         skyBg: "var(--color-sky-bg)"
 			},
+      fontFamily: {
+				dubiel: ["Dubiel", "serif"],
+			},
 		},
 	},
   plugins: [

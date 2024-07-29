@@ -51,7 +51,7 @@ export default function Nav() {
 					<a
 						href={navItem.href}
 						key={navItem.href}
-						className="btn bg-primary text-lightBg">
+						className="btn bg-primary text-lightBg hover:text-secondary">
 						{navItem.label}
 					</a>
 				))}

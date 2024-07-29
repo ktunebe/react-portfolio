@@ -84,7 +84,7 @@ export default function ProjectCarousel({
 				<div className="px-2">
 					<h3 className="text-xl sm:text-3xl lg:text-3xl my-4">{`${
 						projects[index].title
-					} (${index + 1}/${projects.length})`}</h3>
+					}`}</h3>
 				</div>
 				{/* Next Btn */}
 				<button
