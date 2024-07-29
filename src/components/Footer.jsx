@@ -1,17 +1,17 @@
 const profileLinks = [
   {
     name: 'LinkedIn',
-    logoSrc: "./src/assets/logos-images/linkedin-2021.svg",
+    logoSrc: "/logos-images/linkedin-2021.svg",
     url: 'https://www.linkedin.com/in/kent-tuneberg-59a191320/',
   },
 	{
 		name: 'GitHub',
-		logoSrc: "./src/assets/logos-images/github-logo-vector.svg",
+		logoSrc: "/logos-images/github-logo-vector.svg",
 		url: 'https://github.com/ktunebe',
 	},
 	{
 		name: 'Stack Overflow',
-		logoSrc: "./src/assets/logos-images/stack-overflow-logo.svg",
+		logoSrc: "/logos-images/stack-overflow-logo.svg",
 		url: 'https://stackoverflow.com/users/20881411/kent-tuneberg',
 	},
 ]

@@ -4,55 +4,55 @@
     "description": "A dungeon crawl game using PokeAPI and D&D 5e API. Use a random Pokémon to fight an endless barrage of D&D monsters.",
     "githubUrl": "https://github.com/ktunebe/dungeons_and_dragonites",
     "appUrl": "https://ktunebe.github.io/dungeons_and_dragonites",
-    "imgSrc": "./src/assets/my-portfolio/project-screenshots/d-d-battle.png"
+    "imgSrc": "/project-screenshots/d-d-battle.png"
   },
   {
     "title": "console.blog",
     "description": "A blog allowing users to add posts and comment on others using a Model-View-Controller Framework and a PostgreSQL database.",
     "githubUrl": "https://github.com/ktunebe/magnificent-virtual-compositions-tech-blog",
     "appUrl": "https://mvc-tech-blog-65rn.onrender.com",
-    "imgSrc": "./src/assets/my-portfolio/project-screenshots/blog-dashboard.png"
+    "imgSrc": "/project-screenshots/blog-dashboard.png"
   },
   {
     "title": "Weather Dashboard",
     "description": "A weather dashboard that will display the current weather and five day forecast for a selected city using the OpenWeather API.",
     "githubUrl": "https://github.com/ktunebe/weather-dashboard",
     "appUrl": "https://ktunebe.github.io/challenge-06-weather-dashboard",
-    "imgSrc": "./src/assets/my-portfolio/project-screenshots/weather-dashboard-page.png"
+    "imgSrc": "/project-screenshots/weather-dashboard-page.png"
   },
   {
     "title": "Employee Database Manager",
     "description": "A command line application to manage a company's employee database using Node.js, Inquirer and PostgreSQL.",
     "githubUrl": "https://github.com/ktunebe/sql-employee-db",
     "appUrl": null,
-    "imgSrc": "./src/assets/my-portfolio/project-screenshots/employee-tracker.png"
+    "imgSrc": "/project-screenshots/employee-tracker.png"
   },
   {
     "title": "Task Board",
     "description": "A task board made using JQuery UI with draggable/droppable tasks and lanes specifying their progress.",
     "githubUrl": "https://github.com/ktunebe/jquery-task-board",
     "appUrl": "https://ktunebe.github.io/challenge-05-task-board/",
-    "imgSrc": "./src/assets/my-portfolio/project-screenshots/task-board-page.png"
+    "imgSrc": "/project-screenshots/task-board-page.png"
   },
   {
     "title": "Dice Roller",
     "description": "A test for developing a dice rolling companion app. It uses JavaScript logic to roll a number of attack and defense dice and calculates damage based on the enemy's stats and the weapon being used.",
     "githubUrl": "https://github.com/ktunebe/dice-roller",
     "appUrl": "https://ktunebe.github.io/dice-roller/",
-    "imgSrc": "./src/assets/my-portfolio/project-screenshots/dice-roller-1.png"
+    "imgSrc": "/project-screenshots/dice-roller-1.png"
   },
   {
     "title": "NoSQL Social Network",
     "description": "A back end for a social network API using express, MongoDB and the Mongoose npm.",
     "githubUrl": "https://github.com/ktunebe/social-network-api",
     "appUrl": null,
-    "imgSrc": "./src/assets/my-portfolio/project-screenshots/social-network.png"
+    "imgSrc": "/project-screenshots/social-network.png"
   },
   {
     "title": "HoliDB",
     "description": "A movie search database using the TMDB node package to find movies, tag them by holiday, or even create your own holiday. This uses PostgreSQL and Sequelize to keep track of users, movies and holidays.",
     "githubUrl": "https://github.com/ktunebe/holiDB",
     "appUrl": "https://holidb.onrender.com",
-    "imgSrc": "./src/assets/my-portfolio/project-screenshots/holiDB.png"
+    "imgSrc": "/project-screenshots/holiDB.png"
   }
 ]

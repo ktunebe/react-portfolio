@@ -17,7 +17,7 @@ export default function AboutPage() {
 					<div className='flex-none self-center h-48 sm:h-64 w-1/2'>
 						<img
 							className="object-contain w-full h-full"
-							src="./src/assets/my-portfolio/kent-photo.jpg"
+							src="/logos-images/kent-photo.jpg"
 							alt="Picture of Kent"></img>
 					</div>
 				</div>
@@ -25,7 +25,7 @@ export default function AboutPage() {
 					<div className='w-1/2'>
 						<img
 							className="object-cover w-full h-full"
-							src="./src/assets/logos-images/stock-html.png"
+							src="/logos-images/stock-html.png"
 							alt="Stock photo of HTML code"></img>
 					</div>
 					<div className='self-center justify-center px-4 flex-initial w-1/2 py-12'>
