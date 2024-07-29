@@ -48,6 +48,10 @@ export default function ProjectCarousel({
 						} `}
 				/>
 				{/* Current Image */}
+				<a
+					className="sm:text-lg underline text-center"
+					href={projects[index].githubUrl}
+					target="_blank">
 				<img
 					src={projects[index].imgSrc}
 					alt={`Screenshot of ${projects[index].title}`}
@@ -61,18 +65,21 @@ export default function ProjectCarousel({
 								: ''
 						}`}
 				/>
+				</a>
 			</div>
-
+			{/* Steps to show how many projects to scroll through */}
 			<ul className="steps">
 				{projects.map((project) => {
 					return (
-						<li key={project.title} className={`step ${
-							project === projects[index] ? 'step-neutral' : ''
-						}`}></li>
+						<li
+							key={project.title}
+							className={`step ${
+								project === projects[index] ? 'step-neutral' : ''
+							}`}></li>
 					)
 				})}
 			</ul>
-
+			{/* Buttons and Project info */}
 			<div className="flex gap-3 items-center relative justify-between my-2 max-[400px]:px-1 px-3 w-full">
 				{/* Prev Btn */}
 				<button
@@ -82,9 +89,7 @@ export default function ProjectCarousel({
 				</button>
 				{/* Project Title */}
 				<div className="px-2">
-					<h3 className="text-xl sm:text-3xl lg:text-3xl my-4">{`${
-						projects[index].title
-					}`}</h3>
+					<h3 className="text-xl sm:text-3xl lg:text-3xl my-4">{`${projects[index].title}`}</h3>
 				</div>
 				{/* Next Btn */}
 				<button
@@ -95,9 +100,22 @@ export default function ProjectCarousel({
 			</div>
 			{/* Project Description */}
 			<p className="sm:text-lg">{projects[index].description}</p>
-			<a className="sm:text-lg underline" href={projects[index].githubUrl}>
-				{projects[index].title} GitHub Repo
-			</a>
+			<div className="flex justify-around">
+				{projects[index].appUrl 
+					? 				<a
+					className="sm:text-lg underline text-center"
+					href={projects[index].appUrl}
+					target="_blank">
+					Deployed App
+				</a> 
+				: ''}
+				<a
+					className="sm:text-lg underline text-center"
+					href={projects[index].githubUrl}
+					target="_blank">
+					GitHub Repo
+				</a>
+			</div>
 		</>
 	)
 }

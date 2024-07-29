@@ -1,4 +1,4 @@
-import projects from '../assets/projects.json'
+import projects from '../assets/my-portfolio/projects.json'
 import ProjectCarousel from '../components/ProjectCarousel'
 import { useState } from 'react'
 
@@ -26,7 +26,7 @@ export default function PortfolioPage() {
 
   return (
     <div className='container my-4 mx-auto text-center text-primary w-[80%] lg:w-[60%]'>
-      <h2 className='text-3xl sm:text-4xl mb-8'>Projects</h2>
+      <h2 className='text-3xl sm:text-4xl'>Projects</h2>
 
       <ProjectCarousel 
         projects={projects}

@@ -1,18 +1,18 @@
 const profileLinks = [
   {
     name: 'LinkedIn',
-    logoSrc: "./src/assets/linkedin-2021.svg",
-    url: null,
+    logoSrc: "./src/assets/logos-images/linkedin-2021.svg",
+    url: 'https://www.linkedin.com/in/kent-tuneberg-59a191320/',
   },
 	{
 		name: 'GitHub',
-		logoSrc: "./src/assets/github-logo-vector.svg",
-		url: null,
+		logoSrc: "./src/assets/logos-images/github-logo-vector.svg",
+		url: 'https://github.com/ktunebe',
 	},
 	{
 		name: 'Stack Overflow',
-		logoSrc: "./src/assets/stack-overflow-logo.svg",
-		url: null,
+		logoSrc: "./src/assets/logos-images/stack-overflow-logo.svg",
+		url: 'https://stackoverflow.com/users/20881411/kent-tuneberg',
 	},
 ]
 
@@ -27,7 +27,7 @@ export default function Footer() {
 				<div className="flex justify-evenly items-center w-1/2 lg:w-1/3">
         {profileLinks.map((profileLink) => {
           return (
-            <a key={profileLink.name} href="https://github.com/your-profile" target="_blank" className="w-[20%]">
+            <a key={profileLink.name} href={profileLink.url} target="_blank" className="w-[20%]">
 						<img
 							src={profileLink.logoSrc}
 							alt={`${profileLink.name} Logo`}

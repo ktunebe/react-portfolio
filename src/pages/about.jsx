@@ -10,16 +10,14 @@ export default function AboutPage() {
 							About Me
 						</h2>
 						<p className="sm:text-lg indent-8 my-4">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-							provident cum soluta delectus, autem quis animi, beatae officia
-							voluptas accusamus maxime. 
+							My name is Kent Tuneberg, and I'd love to help you with any of your web development needs!
 						</p>
-						<a href="/contact"><button className='button bg-secondary text-lightBg w-3/4 py-2 rounded-3xl'>Contact Me</button></a>
+						<a href="/contact"><button className='button bg-secondary hover:bg-lightBg hover:text-secondary text-lightBg w-3/4 py-2 rounded-3xl'>Contact Me</button></a>
 					</div>
 					<div className='flex-none self-center h-48 sm:h-64 w-1/2'>
 						<img
 							className="object-contain w-full h-full"
-							src="./src/assets/kent-photo.jpg"
+							src="./src/assets/my-portfolio/kent-photo.jpg"
 							alt="Picture of Kent"></img>
 					</div>
 				</div>
@@ -27,17 +25,12 @@ export default function AboutPage() {
 					<div className='w-1/2'>
 						<img
 							className="object-cover w-full h-full"
-							src="./src/assets/stock-html.png"
+							src="./src/assets/logos-images/stock-html.png"
 							alt="Stock photo of HTML code"></img>
 					</div>
-					<div className='self-center justify-center text-center px-4 flex-initial w-1/2 py-12'>
-						<p className="sm:text-lg indent-8 my-4">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-							provident cum soluta delectus, autem quis animi, beatae officia
-							voluptas accusamus maxime. Ea cumque ab error aspernatur dolorum
-							officiis quisquam a deserunt officia? Aut rerum a esse voluptatum
-							repudiandae tempore perspiciatis fugit ipsa? Distinctio itaque
-							molestias maiores, sed aspernatur earum nisi?
+					<div className='self-center justify-center px-4 flex-initial w-1/2 py-12'>
+						<p className="sm:text-lg indent-8 my-4 px-4">
+							I currently live in Rockford, Illinois with my wife, Alex, and our two golden retrievers, Chester and Herbie. My hobbies include sports, video games and enjoying time with Alex and the dogs. After working as a dentist for 8 years, I made a career transition to web development, and bring a fresh, well-rounded perspective to coding real world applications. 
 						</p>
 					</div>
 				</div>
