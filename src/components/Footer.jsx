@@ -18,7 +18,7 @@ const profileLinks = [
 
 export default function Footer() {
 	return (
-		<footer className="flex items-center justify-between lg:justify-end bg-primary text-lightBg max-w-[1200px] py-6">
+		<footer className="flex items-center justify-between lg:justify-end bg-primary text-lightBg max-w-[1600px] py-6">
 				<div className="pl-4 w-1/2 lg:w-1/6">
 					<h2>Kent Tuneberg</h2>
 					<h3>ktunebe@gmail.com</h3>
