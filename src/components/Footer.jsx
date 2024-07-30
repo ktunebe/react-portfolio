@@ -27,7 +27,7 @@ export default function Footer() {
 				<div className="flex flex-col sm:flex-row justify-evenly items-center w-1/2 lg:w-1/3">
         {profileLinks.map((profileLink) => {
           return (
-            <a key={profileLink.name} href={profileLink.url} target="_blank" className="w-[20%] py-3">
+            <a key={profileLink.name} href={profileLink.url} target="_blank" className="w-[35%] sm:w-[20%] py-1">
 						<img
 							src={profileLink.logoSrc}
 							alt={`${profileLink.name} Logo`}
