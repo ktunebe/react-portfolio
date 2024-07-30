@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import emailjs from 'emailjs-com';
 import ContactForm  from '../components/ContactForm'
 
 const defaultFormState = {
@@ -22,10 +23,15 @@ export default function ContactPage() {
   const handleFormSubmit = (e) => {
     e.preventDefault();
 
-    console.log(`Name: ${formState.name}`)
-    console.log(`Email: ${formState.email}`)
-    console.log(`Message: '${formState.message}'`)
-
+    emailjs.sendForm('service_6u2xdql', 'template_y7f9czm', e.target, '3lWyWx2TTMeDH4h3D')
+      .then((result) => {
+        console.log(result.text);
+        alert('Email sent to ktunebe@gmail.com.')
+      }, (error) => {
+        console.log(error.text);
+        alert(`Error sending email: ${error.text}`);
+      });
+    
     setFormState(defaultFormState)
   }
 
