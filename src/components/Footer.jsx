@@ -18,16 +18,16 @@ const profileLinks = [
 
 export default function Footer() {
 	return (
-		<footer className="h-[11.75vh] flex items-center justify-between lg:justify-end bg-primary text-lightBg max-w-[1200px]">
+		<footer className="flex items-center justify-between lg:justify-end bg-primary text-lightBg max-w-[1200px] py-6">
 				<div className="pl-4 w-1/2 lg:w-1/6">
 					<h2>Kent Tuneberg</h2>
 					<h3>ktunebe@gmail.com</h3>
 					<h3>(815)-621-5184</h3>
 				</div>
-				<div className="flex justify-evenly items-center w-1/2 lg:w-1/3">
+				<div className="flex flex-col sm:flex-row justify-evenly items-center w-1/2 lg:w-1/3">
         {profileLinks.map((profileLink) => {
           return (
-            <a key={profileLink.name} href={profileLink.url} target="_blank" className="w-[20%]">
+            <a key={profileLink.name} href={profileLink.url} target="_blank" className="w-[20%] py-3">
 						<img
 							src={profileLink.logoSrc}
 							alt={`${profileLink.name} Logo`}
