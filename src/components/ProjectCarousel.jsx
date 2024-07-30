@@ -106,14 +106,14 @@ export default function ProjectCarousel({
 					className="sm:text-lg underline underline-offset-8 text-sec text-center"
 					href={projects[index].appUrl}
 					target="_blank">
-					&rarr; Deployed App &larr;
+					&rarr; Deployed App
 				</a> 
 				: ''}
 				<a
 					className="sm:text-lg underline underline-offset-8 text-center"
 					href={projects[index].githubUrl}
 					target="_blank">
-					&rarr; GitHub Repo &larr;
+					&rarr; GitHub Repo
 				</a>
 			</div>
 		</>
