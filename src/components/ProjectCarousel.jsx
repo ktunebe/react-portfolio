@@ -100,20 +100,20 @@ export default function ProjectCarousel({
 			</div>
 			{/* Project Description */}
 			<p className="sm:text-lg">{projects[index].description}</p>
-			<div className="flex justify-around">
+			<div className="flex justify-around py-4">
 				{projects[index].appUrl 
 					? 				<a
-					className="sm:text-lg underline text-center"
+					className="sm:text-lg underline underline-offset-8 text-sec text-center"
 					href={projects[index].appUrl}
 					target="_blank">
-					Deployed App
+					&rarr; Deployed App &larr;
 				</a> 
 				: ''}
 				<a
-					className="sm:text-lg underline text-center"
+					className="sm:text-lg underline underline-offset-8 text-center"
 					href={projects[index].githubUrl}
 					target="_blank">
-					GitHub Repo
+					&rarr; GitHub Repo &larr;
 				</a>
 			</div>
 		</>
