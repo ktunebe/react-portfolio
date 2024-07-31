@@ -39,6 +39,7 @@ export default function ContactPage() {
     <>
     <div className='container my-8 mx-auto text-center text-primary w-[80%]'>
       <h2 className='text-3xl sm:text-5xl font-bold mb-8'>Contact Me</h2>
+      <p>Drop me a message! Just enter your name and return email address, and I will get back to you as soon as possible.</p>
 
       <ContactForm 
         formState={formState}
