@@ -1,22 +1,13 @@
 import React from 'react';
-import emailjs from 'emailjs-com';
 
 export default function ContactForm({
   formState,
+  formAlert,
+  validEmailAlert,
   handleInputChange,
   handleFormSubmit,
+  onFocusChange
 }) {
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs.sendForm('service_6u2xdql', 'template_y7f9czm', e.target, '3lWyWx2TTMeDH4h3D')
-      .then((result) => {
-        console.log(result.text);
-      }, (error) => {
-        console.log(error.text);
-      });
-		handleFormSubmit()
-  };
 
   return (
     <>
@@ -28,6 +19,7 @@ export default function ContactForm({
           <input
             name="name"
             value={formState.name}
+            onBlur={onFocusChange}
             onChange={handleInputChange}
             type="text"
             placeholder="Type here"
@@ -38,14 +30,18 @@ export default function ContactForm({
           <div className="label">
             <span className="label-text text-base md:text-lg">Email</span>
           </div>
-          <input
-            name="email"
-            value={formState.email}
-            onChange={handleInputChange}
-            type="text"
-            placeholder="Type here"
-            className="input input-bordered w-full max-w-xs md:text-lg bg-white text-black"
-          />
+          <div className="flex items-center gap-4">
+            <input
+              name="email"
+              value={formState.email}
+              onBlur={onFocusChange}
+              onChange={handleInputChange}
+              type="text"
+              placeholder="Type here"
+              className="flex-shrink-0 input input-bordered w-full max-w-xs md:text-lg bg-white text-black"
+            />
+            <p className='flex-shrink-0 text-red-500'>{validEmailAlert}</p>
+          </div>
         </label>
         <label className="form-control my-5">
           <div className="label">
@@ -54,11 +50,13 @@ export default function ContactForm({
           <textarea
             name="message"
             value={formState.message}
+            onBlur={onFocusChange}
             onChange={handleInputChange}
             className="textarea textarea-bordered h-24 text-base md:text-lg bg-white text-black"
             placeholder="Type Here"></textarea>
         </label>
         <button className="btn rounded-2xl md:text-lg bg-primary text-lightBg hover:text-secondary my-3" type="submit">Submit</button>
+      <p className='text-red-500'>{formAlert}</p>
       </form>
     </>
   );
