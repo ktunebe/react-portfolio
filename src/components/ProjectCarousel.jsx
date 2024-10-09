@@ -3,6 +3,7 @@ export default function ProjectCarousel({
 	index,
 	handleNextClick,
 	handlePrevClick,
+	handleIndexClick,
 	translateNextIndex,
 	translatePrevIndex,
 }) {
@@ -69,13 +70,16 @@ export default function ProjectCarousel({
 			</div>
 			{/* Steps to show how many projects to scroll through */}
 			<ul className="justify-center pt-3 gap-2 flex flex-wrap">
-				{projects.map((project) => {
+				{projects.map((project, idx) => {
 					return (
-						<li
+						<button
+							onClick={() => handleIndexClick(idx)}
 							key={project.title}
 							className={`px-2 rounded-full ${
 								project === projects[index] ? 'bg-skyBg' : ''
-							}`}>{projects.indexOf(project) + 1}</li>
+							}`}>
+									{idx + 1}
+						</button>
 					)
 				})}
 			</ul>
@@ -84,7 +88,7 @@ export default function ProjectCarousel({
 				{/* Prev Btn */}
 				<button
 					onClick={() => handlePrevClick(index)}
-					className="btn max-[400px]:p-1 rounded-full border-2 hover:border-primary bg-primary text-lightBg focus:text-lightBg hover:text-primary hover:bg-lightBg">
+					className="btn max-[400px]:p-1 rounded-full border-2 hover:border-primary bg-primary text-lightBg hover:text-primary hover:bg-lightBg">
 					❮ Prev
 				</button>
 				{/* Project Title */}

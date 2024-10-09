@@ -59,8 +59,8 @@ export default function Nav() {
 					<a
 						href={navItem.href}
 						key={navItem.href}
-						className={`btn bg-primary text-lightBg hover:text-secondary
-							${isActive(navItem.href) ? 'bg-skyBg text-primary' : ''}
+						className={`btn bg-primary text-lightBg hover:text-primary hover:bg-skyBg
+							${isActive(navItem.href) ? 'bg-white text-primary hover:bg-white hover:text-primary pointer-events-none' : ''}
 						`}>
 						{navItem.label}
 					</a>
