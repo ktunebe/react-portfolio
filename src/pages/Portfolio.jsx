@@ -41,7 +41,7 @@ export default function PortfolioPage() {
         translateNextIndex={translateNextIndex} 
         translatePrevIndex={translatePrevIndex}
       />
-
+      
     </div>
   )
 }

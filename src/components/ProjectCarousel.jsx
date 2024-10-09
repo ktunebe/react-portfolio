@@ -51,7 +51,7 @@ export default function ProjectCarousel({
 				{/* Current Image */}
 				<a
 					className="sm:text-lg underline text-center"
-					href={projects[index].githubUrl}
+					href={projects[index].appUrl ? projects[index].appUrl : projects[index].githubUrl}
 					target="_blank">
 				<img
 					src={projects[index].imgSrc}

@@ -1,14 +1,28 @@
 [
   {
+    "title": "Web Wizard's Lair",
+    "description": "A coding challenge game developed with React in which users create an account, choose an avatar and solve coding problems in an embedded code editor. This utilizes React, GraphQL, MongoDB, Mongoose, Express, Node, and TailwindCSS, among other disciplines.",
+    "githubUrl": "https://github.com/ktunebe/web-wizards-lair",
+    "appUrl": "https://project-3-cowabunga.onrender.com/",
+    "imgSrc": "/project-screenshots/wwl-screenshot.png"
+  },
+  {
     "title": "Dungeons and Dragonites",
-    "description": "A dungeon crawl game using PokeAPI and D&D 5e API. Use a random Pokémon to fight an endless barrage of D&D monsters.",
+    "description": "A dungeon crawl game using PokeAPI and D&D 5e API. Use a random Pokémon to fight an endless barrage of D&D monsters. Utilizes JS for battle mechanics and CSS animations/TailwindCSS for battle display.",
     "githubUrl": "https://github.com/ktunebe/dungeons_and_dragonites",
     "appUrl": "https://ktunebe.github.io/dungeons_and_dragonites",
     "imgSrc": "/project-screenshots/d-d-battle.png"
   },
   {
+    "title": "HoliDB",
+    "description": "A movie search database using the TMDB node package to find movies, tag them by holiday, or even create your own holiday. This uses PostgreSQL and Sequelize to keep track of users, movies and holidays.",
+    "githubUrl": "https://github.com/ktunebe/holiDB",
+    "appUrl": "https://holidb.onrender.com",
+    "imgSrc": "/project-screenshots/holiDB.png"
+  },
+  {
     "title": "console.blog",
-    "description": "A blog allowing users to add posts and comment on others using a Model-View-Controller Framework and a PostgreSQL database.",
+    "description": "A blog allowing users to add posts and comment on others using a Model-View-Controller Framework with Handlebars.js and a PostgreSQL database.",
     "githubUrl": "https://github.com/ktunebe/magnificent-virtual-compositions-tech-blog",
     "appUrl": "https://mvc-tech-blog-65rn.onrender.com",
     "imgSrc": "/project-screenshots/blog-dashboard.png"
@@ -17,7 +31,7 @@
     "title": "Weather Dashboard",
     "description": "A weather dashboard that will display the current weather and five day forecast for a selected city using the OpenWeather API.",
     "githubUrl": "https://github.com/ktunebe/weather-dashboard",
-    "appUrl": "https://ktunebe.github.io/challenge-06-weather-dashboard",
+    "appUrl": "https://ktunebe.github.io/weather-dashboard/",
     "imgSrc": "/project-screenshots/weather-dashboard-page.png"
   },
   {
@@ -31,12 +45,12 @@
     "title": "Task Board",
     "description": "A task board made using JQuery UI with draggable/droppable tasks and lanes specifying their progress.",
     "githubUrl": "https://github.com/ktunebe/jquery-task-board",
-    "appUrl": "https://ktunebe.github.io/challenge-05-task-board/",
+    "appUrl": "https://ktunebe.github.io/jquery-task-board/",
     "imgSrc": "/project-screenshots/task-board-page.png"
   },
   {
     "title": "Dice Roller",
-    "description": "A test for developing a dice rolling companion app. It uses JavaScript logic to roll a number of attack and defense dice and calculates damage based on the enemy's stats and the weapon being used.",
+    "description": "A test for developing a dice rolling companion app. It uses JavaScript logic to roll a number of attack and defense dice and calculates damage based on the enemy's stats and the weapon being used. Styled using Bootstrap.",
     "githubUrl": "https://github.com/ktunebe/dice-roller",
     "appUrl": "https://ktunebe.github.io/dice-roller/",
     "imgSrc": "/project-screenshots/dice-roller-1.png"
@@ -47,12 +61,5 @@
     "githubUrl": "https://github.com/ktunebe/social-network-api",
     "appUrl": null,
     "imgSrc": "/project-screenshots/social-network.png"
-  },
-  {
-    "title": "HoliDB",
-    "description": "A movie search database using the TMDB node package to find movies, tag them by holiday, or even create your own holiday. This uses PostgreSQL and Sequelize to keep track of users, movies and holidays.",
-    "githubUrl": "https://github.com/ktunebe/holiDB",
-    "appUrl": "https://holidb.onrender.com",
-    "imgSrc": "/project-screenshots/holiDB.png"
   }
 ]
