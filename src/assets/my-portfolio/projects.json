@@ -3,7 +3,7 @@
     "title": "Web Wizard's Lair",
     "description": "A coding challenge game developed with React in which users create an account, choose an avatar and solve coding problems in an embedded code editor. This utilizes React, GraphQL, MongoDB, Mongoose, Express, Node, and TailwindCSS, among other disciplines.",
     "githubUrl": "https://github.com/ktunebe/web-wizards-lair",
-    "appUrl": "https://project-3-cowabunga.onrender.com/",
+    "appUrl": "https://web-wizards-lair.onrender.com/",
     "imgSrc": "/project-screenshots/wwl-screenshot.png"
   },
   {
