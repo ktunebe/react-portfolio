@@ -1,5 +1,12 @@
 [
   {
+    "title": "MyMRI Business Website",
+    "description": "Developed and deployed MyMRI’s business website using Squarespace, creating a professional online presence for the company based on client's design requirements.",
+    "githubUrl": null,
+    "appUrl": "https://mymri-illinois.com/",
+    "imgSrc": "/project-screenshots/mymri-homepage.png"
+  },
+  {
     "title": "Web Wizard's Lair",
     "description": "A coding challenge game developed with React in which users create an account, choose an avatar and solve coding problems in an embedded code editor. This utilizes React, GraphQL, MongoDB, Mongoose, Express, Node, and TailwindCSS, among other disciplines.",
     "githubUrl": "https://github.com/ktunebe/web-wizards-lair",
@@ -47,13 +54,6 @@
     "githubUrl": "https://github.com/ktunebe/jquery-task-board",
     "appUrl": "https://ktunebe.github.io/jquery-task-board/",
     "imgSrc": "/project-screenshots/task-board-page.png"
-  },
-  {
-    "title": "Dice Roller",
-    "description": "A test for developing a dice rolling companion app. It uses JavaScript logic to roll a number of attack and defense dice and calculates damage based on the enemy's stats and the weapon being used. Styled using Bootstrap.",
-    "githubUrl": "https://github.com/ktunebe/dice-roller",
-    "appUrl": "https://ktunebe.github.io/dice-roller/",
-    "imgSrc": "/project-screenshots/dice-roller-1.png"
   },
   {
     "title": "NoSQL Social Network",
