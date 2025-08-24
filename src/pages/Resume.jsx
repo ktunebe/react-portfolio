@@ -6,14 +6,14 @@ export default function ResumePage() {
 			<div className="">
 				<div className='text-center m-2'>
 					<a
-						href="/logos-images/kent-tuneberg-resume.pdf"
+						href="/logos-images/kent_tuneberg_resume.pdf"
 						download>
 						Download PDF
 					</a>
 				</div>
 				<iframe
 					className="h-[75vh] w-[90%] mx-auto"
-					src="/logos-images/kent-tuneberg-resume.pdf"
+					src="/logos-images/kent_tuneberg_resume.pdf"
 				/>
 			</div>
 		</>
