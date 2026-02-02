@@ -1,5 +1,5 @@
 import projects from '../assets/my-portfolio/projects.json'
-import ProjectCarousel from '../components/ProjectCarousel'
+import ProjectCarousel from '../components/ProjectCarousel2'
 import { useState } from 'react'
 
 export default function PortfolioPage() {

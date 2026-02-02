@@ -23,7 +23,7 @@ const navItems = [
 	}
 ]
 
-export default function Nav() {
+export default function Nav({ scrollToSection }) {
 
 	return (
 		<div>
@@ -55,12 +55,14 @@ export default function Nav() {
 			</div>
 			<div className="hidden md:flex space-x-4">
 				{navItems.map((navItem) => (
-					<a
-						href={navItem.href}
+					<button
 						key={navItem.href}
+						onClick={() => {
+							scrollToSection(navItem.label.toLowerCase())
+						}}
 						className={`btn bg-primary text-lightBg hover:text-primary hover:bg-skyBg`}>
 						{navItem.label}
-					</a>
+					</button>
 				))}
 			</div>
 		</div>

@@ -1,0 +1,44 @@
+[
+	{
+		"title": "Bachelor's + Doctorate",
+		"snippets": [
+			"2007-2015",
+			"Augustana College - BS in Biology",
+			"Southern Illinois University - DMD"
+		],
+		"iconUrl": "/logos-images/icons8-graduation-cap-50.png",
+    "iconAlt": "Graduation Cap icon by Icons8"
+	},
+	{
+		"title": "Practicing Dentist",
+		"snippets": [
+			"2015-2023",
+			"Process-driven problem solving in high-stakes environments",
+			"Workflow optimization, documentation, and compliance-heavy systems",
+			"Medical event → career change"
+		],
+		"iconUrl": "/logos-images/icons8-tooth-100.png",
+    "iconAlt": "Tooth icon by Icons8"
+	},
+	{
+		"title": "Computer Science",
+		"snippets": [
+			"2024-Present",
+			"University of Wisconsin - Full-Stack Web Development Certificate (4.0 GPA)",
+			"Stevens Institute of Technology - MS in CS (in progress, 4.0 GPA)",
+			"Teaching Assistant - Algorithms (CS-570)"
+		],
+		"iconUrl": "/logos-images/icons8-informatics-64.png",
+    "iconAlt": "Informatics icon by Icons8"
+	},
+	{
+		"title": "Frontend Developer",
+		"snippets": [
+			"Present",
+			"Designing and building production-ready React applications",
+			"Focused on clean UI systems, performance, and accessibility"
+		],
+		"iconUrl": "/logos-images/icons8-development-100.png",
+    "iconAlt": "Transition icon by Icons8"
+	}
+]
