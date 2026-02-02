@@ -4,7 +4,7 @@ export default function Header() {
   
   return (
     <header className='flex justify-between items-center px-3 py-3 bg-light-bg text-primary border-b-2 border-primary'>
-      <h1 className='text-4xl'>Kent Tuneberg</h1>
+      <h1 className='text-5xl'>Kent Tuneberg</h1>
       <Nav />
 
     </header>
