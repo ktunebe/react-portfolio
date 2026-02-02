@@ -18,7 +18,7 @@ export default {
           strong: "#2F3570"
         },
         text: {
-          primary: "#F3F4FF",
+          primary: "#F7EBFF",
           secondary: "#C7CAEA",
           muted: "#9AA0D1",
           faint: "#7A80B5"

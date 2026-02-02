@@ -1,28 +1,29 @@
-import { useLocation } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const navItems = [
 	{
-		href: '/',
-		label: 'About Me',
+		href: '#projects',
+		label: 'Projects',
 	},
 	{
-		href: '/portfolio',
-		label: 'Portfolio',
+		href: '#skills',
+		label: 'Skills',
+	},
+	{
+		href: '#about',
+		label: 'About',
+	},
+	{
+		href: '#contact',
+		label: 'Contact',
 	},
 	{
 		href: '/resume',
-		label: 'Resume',
-	},
-	{
-		href: '/contact',
-		label: 'Contact Me',
-	},
+		label: 'Resume'
+	}
 ]
 
 export default function Nav() {
-	const location = useLocation()
-    
-	const isActive = (path) => location.pathname === path
 
 	return (
 		<div>
@@ -45,9 +46,7 @@ export default function Nav() {
 					className="border-2 border-primary dropdown-content menu bg-base-100 rounded-box z-[1] w-32 shadow bg-lightBg">
 					{navItems.map((navItem) => {
 						return (
-							<a href={navItem.href} key={navItem.href} className={`block p-2 text-center
-							${isActive(navItem.href) ? 'border-2 rounded-xl border-primary' : ''}
-							`}>
+							<a href={navItem.href} key={navItem.href} className={`block p-2 text-center`}>
 								{navItem.label}
 							</a>
 						)
@@ -59,9 +58,7 @@ export default function Nav() {
 					<a
 						href={navItem.href}
 						key={navItem.href}
-						className={`btn bg-primary text-lightBg hover:text-primary hover:bg-skyBg
-							${isActive(navItem.href) ? 'bg-white text-primary hover:bg-white hover:text-primary pointer-events-none' : ''}
-						`}>
+						className={`btn bg-primary text-lightBg hover:text-primary hover:bg-skyBg`}>
 						{navItem.label}
 					</a>
 				))}

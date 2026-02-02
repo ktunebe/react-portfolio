@@ -19,14 +19,14 @@ export default function ProjectCarousel({
 							: projects[(index + 1 + projects.length) % projects.length].imgSrc
 					}
 					alt={`Screenshot of ${projects[index].title}`}
-					className={`w-[80%] border-2 border-white rounded-3xl absolute top-10 -right-3 sm:-right-6 md:-right-12 
+					className={`w-[80%] border-2 border-border-strong rounded-3xl absolute top-10 -right-3 sm:-right-6 md:-right-12 
             ${
 							// Wrap direction based on prev or next click
 							translatePrevIndex === index
 								? '-translate-x-[35%] sm:-translate-x-[40%] z-10 duration-500'
 								: translateNextIndex === index
-								? '-translate-x-[15%] translate-y-[5%] scale-[1.15] z-50 duration-500'
-								: ''
+									? '-translate-x-[15%] translate-y-[5%] scale-[1.15] z-50 duration-500'
+									: ''
 						}`}
 				/>
 				{/* Previous Image */}
@@ -38,34 +38,35 @@ export default function ProjectCarousel({
 							: projects[(index - 1 + projects.length) % projects.length].imgSrc
 					}
 					alt={`Screenshot of ${projects[index].title}`}
-					className={`w-[80%] border-2 border-white rounded-3xl absolute top-10 -left-3 sm:-left-6 md:-left-12 
+					className={`w-[80%] border-2 border-border-strong rounded-3xl absolute top-10 -left-3 sm:-left-6 md:-left-12 
             ${
 							// Wrap direction based on prev or next click
 							translatePrevIndex === index
 								? 'translate-x-[15%] translate-y-[5%] scale-[1.15] z-50 duration-500'
 								: translateNextIndex === index
-								? 'translate-x-[35%] sm:translate-x-[40%] z-10 duration-500'
-								: ''
+									? 'translate-x-[35%] sm:translate-x-[40%] z-10 duration-500'
+									: ''
 						} `}
 				/>
 				{/* Current Image */}
 				<a
-					className="sm:text-lg underline text-center"
-					href={projects[index].appUrl ? projects[index].appUrl : projects[index].githubUrl}
+					href={
+						projects[index].appUrl || projects[index].githubUrl
+					}
 					target="_blank">
-				<img
-					src={projects[index].imgSrc}
-					alt={`Screenshot of ${projects[index].title}`}
-					className={`w-full border-2 border-white rounded-3xl relative top-4 sm:top-0 left-0 
+					<img
+						src={projects[index].imgSrc}
+						alt={`Screenshot of ${projects[index].title}`}
+						className={`w-full border-2 border-border-strong shadow-md shadow-border-strong rounded-3xl relative top-4 sm:top-0 left-0 
             ${
 							// Wrap direction based on prev or next click
 							translatePrevIndex === index
 								? 'translate-x-[15%] sm:translate-x-[10%] -translate-y-[5%] scale-[.85] sm:scale-[.85] z-20 duration-500'
 								: translateNextIndex === index
-								? '-translate-x-[15%] sm:-translate-x-[10%] -translate-y-[5%] scale-[.85] sm:scale-[.85] z-20 duration-500'
-								: ''
+									? '-translate-x-[15%] sm:-translate-x-[10%] -translate-y-[5%] scale-[.85] sm:scale-[.85] z-20 duration-500'
+									: ''
 						}`}
-				/>
+					/>
 				</a>
 			</div>
 			{/* Steps to show how many projects to scroll through */}
@@ -78,7 +79,7 @@ export default function ProjectCarousel({
 							className={`px-2 rounded-full ${
 								project === projects[index] ? 'bg-skyBg' : ''
 							}`}>
-									{idx + 1}
+							{idx + 1}
 						</button>
 					)
 				})}
@@ -105,22 +106,26 @@ export default function ProjectCarousel({
 			{/* Project Description */}
 			<p className="sm:text-lg">{projects[index].description}</p>
 			<div className="flex justify-around py-4">
-				{projects[index].appUrl 
-					? 				<a
-					className="sm:text-lg underline underline-offset-8 text-sec text-center"
-					href={projects[index].appUrl}
-					target="_blank">
-					&rarr; Deployed App
-				</a> 
-				: ''}
-				{projects[index].githubUrl 
-					? 				<a
-					className="sm:text-lg underline underline-offset-8 text-sec text-center"
-					href={projects[index].githubUrl}
-					target="_blank">
-					&rarr; GitHub Repo
-				</a> 
-				: ''}
+				{projects[index].appUrl ? (
+					<a
+						className="sm:text-lg underline underline-offset-8 text-sec text-center"
+						href={projects[index].appUrl}
+						target="_blank">
+						&rarr; Deployed App
+					</a>
+				) : (
+					''
+				)}
+				{projects[index].githubUrl ? (
+					<a
+						className="sm:text-lg underline underline-offset-8 text-sec text-center"
+						href={projects[index].githubUrl}
+						target="_blank">
+						&rarr; GitHub Repo
+					</a>
+				) : (
+					''
+				)}
 			</div>
 		</>
 	)

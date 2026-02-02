@@ -3,15 +3,22 @@
 @tailwind utilities;
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  /* max-width: 1600px; */
-  margin: auto;
+	margin: auto;
 }
-
+@layer components {
+	.header {
+		@apply flex justify-between items-center p-8 text-text-primary;
+	}
+}
 @font-face {
-  font-family: 'Dubiel';
-  src: url('../src/assets/fonts/Quattrocento-Regular.ttf') format('truetype');
+	font-family: 'Dubiel';
+	src: url('../src/assets/fonts/Quattrocento-Regular.ttf') format('truetype');
 }
