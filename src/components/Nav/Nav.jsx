@@ -41,7 +41,7 @@ export default function Nav({ scrollToSection }) {
 							d="M4 6h16M4 12h16M4 18h16"></path>
 					</svg>
 				</div>
-				<ul
+				{/* <ul
 					tabIndex={0}
 					className="border-2 border-primary dropdown-content menu bg-base-100 rounded-box z-[1] w-32 shadow bg-lightBg">
 					{navItems.map((navItem) => {
@@ -51,7 +51,7 @@ export default function Nav({ scrollToSection }) {
 							</a>
 						)
 					})}
-				</ul>
+				</ul> */}
 			</div>
 			<div className="hidden md:flex space-x-4">
 				{navItems.map((navItem) => (

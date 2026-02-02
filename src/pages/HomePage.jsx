@@ -44,7 +44,7 @@ export default function HomePage() {
 				}}
 				className="mx-auto px-12"
 				>
-				<h2 className="text-3xl">About Me</h2>
+				<h2 className="text-3xl border-b-2 border-primary-400/50 py-3">About Me</h2>
 				<AboutMeContainer />
 			</section>
 			<section

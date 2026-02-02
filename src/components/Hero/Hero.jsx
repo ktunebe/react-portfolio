@@ -18,12 +18,16 @@ export default function Hero() {
 				<span className="mx-2 text-primary-glow">&middot;</span>
 				<span className="mx-2">Javascript</span>
 				<span className="mx-2 text-primary-glow">&middot;</span>
-				<span className="mx-2">Next.js</span>
+				<span className="mx-2">Node.js</span>
 				<span className="mx-2 text-primary-glow hidden sm:inline">
 					&middot;
 				</span>
 				<span className="mx-2 hidden sm:inline">MongoDB</span>
 				<span className="mx-2 text-primary-glow hidden sm:inline">
+					&middot;
+				</span>
+				<span className="mx-2 hidden md:inline">TailwindCSS</span>
+				<span className="mx-2 text-primary-glow hidden md:inline">
 					&middot;
 				</span>
 			</div>
