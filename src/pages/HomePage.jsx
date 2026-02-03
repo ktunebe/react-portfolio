@@ -4,6 +4,8 @@ import Header from '../components/Header'
 import Hero from '../components/Hero'
 import AboutMeContainer from '../components/AboutMeContainer/AboutMeContainer'
 import SkillsContainer from '../components/SkillsContainer/SkillsContainer'
+import ContactContainer from '../components/ContactContainer/ContactContainer'
+
 
 export default function HomePage() {
 	const sectionRefs = React.useRef({})
@@ -35,7 +37,7 @@ export default function HomePage() {
 				}}
 				className="mx-auto px-12 my-10"
 				>
-				<h2 className="text-3xl mb-6 min-[900px]:mb-0">My Skills</h2>
+				<h2 className="text-3xl text-text-secondary mb-6 min-[900px]:mb-0">My Skills</h2>
 				<SkillsContainer />
 			</section>
 			<section
@@ -55,7 +57,8 @@ export default function HomePage() {
 				}}
 				className="mx-auto px-12 my-10"
 				>
-				<h2 className="text-3xl">Say Hello</h2>
+				<h2 className="text-3xl text-text-secondary border-b-2 border-secondary-400/80">Say Hello</h2>
+				<ContactContainer />
 			</section>
 		</>
 	)

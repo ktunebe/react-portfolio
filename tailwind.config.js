@@ -19,7 +19,7 @@ export default {
         },
         text: {
           primary: "#F7EBFF",
-          secondary: "#C7CAEA",
+          secondary: "#DBDEFF",
           muted: "#9AA0D1",
           faint: "#7A80B5"
         },
