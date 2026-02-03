@@ -14,7 +14,7 @@ function SkillsContainer() {
 						key={skill.id}
 						id={skill.id}
 						onClick={() => setActiveTab(skill.id)}
-						className={`flex-1 p-2 ${index === 0 && 'rounded-l-full'} ${index === skillsTabs.length - 1 && 'rounded-r-full'} ${activeTab === skill.id && 'bg-secondary-500/40'}`}>
+						className={`flex-1 p-2 ${index === 0 && 'rounded-l-full'} ${index === skillsTabs.length - 1 && 'rounded-r-full'} ${activeTab === skill.id ? 'bg-secondary-500/40' : 'hover:bg-secondary-400/20'}`}>
 						{skill.label}
 					</button>
 				))}

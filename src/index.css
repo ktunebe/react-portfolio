@@ -33,6 +33,10 @@ body {
 		@apply absolute left-0 right-0 top-0 h-2;
 		background: linear-gradient(to right, #A78BFA, #6d28d9);
 	}
+
+  .form-input {
+    @apply text-bg-0 font-normal px-1.5 py-px mb-4 mt-1 focus:outline-secondary-400/80
+  }
 }
 @font-face {
 	font-family: 'Dubiel';
