@@ -18,7 +18,7 @@ body {
 		@apply flex justify-between items-center p-8 text-text-primary;
 	}
 	.on-border-pill-top {
-		@apply absolute left-1/2 -translate-x-1/2 -translate-y-1/2 top-1 text-center bg-bg-3 shadow-primary-glow shadow-sm p-2 rounded-full;
+		@apply absolute left-1/2 -translate-x-1/2 -translate-y-1/2 top-1 text-center bg-bg-3 shadow-sm p-2 rounded-full;
 	}
 	.on-border-pill-bottom {
 		@apply absolute left-1/2 -translate-x-1/2 translate-y-1/2 -bottom-1 text-center bg-bg-3 shadow-primary-glow shadow-sm p-2 rounded-full;
