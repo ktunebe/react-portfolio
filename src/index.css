@@ -37,6 +37,10 @@ body {
   .form-input {
     @apply text-bg-0 font-normal px-1.5 py-px mb-4 mt-1 focus:outline-secondary-400/80
   }
+
+  .arrow-button {
+    @apply rounded-full  bg-bg-3/60 hover:bg-text-primary
+  }
 }
 @font-face {
 	font-family: 'Dubiel';

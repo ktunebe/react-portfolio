@@ -28,8 +28,8 @@ export default function HomePage() {
 				ref={(el) => {
 					sectionRefs.current.projects = el
 				}}
-				className="mx-auto px-12 my-10">
-				<h2 className="text-3xl">Featured Projects</h2>
+				className="mx-auto px-12 my-20">
+				<h2 className="text-3xl border-b-2 border-primary-400/50">Featured Projects</h2>
 				<CarouselContainer />
 			</section>
 			{/* Skills Section */}
@@ -38,7 +38,7 @@ export default function HomePage() {
 				ref={(el) => {
 					sectionRefs.current.skills = el
 				}}
-				className="mx-auto px-12 my-10 text-text-secondary">
+				className="mx-auto px-12 my-20 text-text-secondary">
 				<h2 className="text-3xl mb-6 min-[900px]:mb-0">My Skills</h2>
 				<SkillsContainer />
 			</section>
@@ -48,7 +48,7 @@ export default function HomePage() {
 				ref={(el) => {
 					sectionRefs.current.about = el
 				}}
-				className="mx-auto px-12 my-10">
+				className="mx-auto px-12 my-20">
 				<h2 className="text-3xl border-b-2 border-primary-400/50">About Me</h2>
 				<AboutMeContainer />
 			</section>
@@ -58,7 +58,7 @@ export default function HomePage() {
 				ref={(el) => {
 					sectionRefs.current.contact = el
 				}}
-				className="mx-auto px-12 my-10 text-text-secondary">
+				className="mx-auto px-12 my-20 text-text-secondary">
 				<h2 className="text-3xl border-b-2 border-secondary-400/80">
 					Say Hello
 				</h2>
