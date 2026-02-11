@@ -41,6 +41,7 @@ function CarouselCard({ project, isActive, position, onSelect }) {
 					{project.appUrl && (
 						<a
 							href={project.appUrl}
+							target='_blank'
 							className={`py-2 bg-primary-glow/90 hover:bg-primary-600/60 ${
 								project.githubUrl
 									? 'border-r-2 border-primary-600/80 w-1/2 rounded-bl-2xl'
@@ -52,6 +53,7 @@ function CarouselCard({ project, isActive, position, onSelect }) {
 					{project.githubUrl && (
 						<a
 							href={project.githubUrl}
+							target='_blank'
 							className={`py-2 bg-primary-glow/90 hover:bg-primary-600/60 ${
 								project.appUrl ? 'w-1/2 rounded-br-2xl' : 'w-full rounded-b-2xl'
 							}`}>
