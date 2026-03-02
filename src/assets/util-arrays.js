@@ -164,6 +164,14 @@ export const projects = [
 		imgSrc: '/project-screenshots/mymri-homepage.png',
 	},
 	{
+		title: 'My Recipe Book',
+		description:
+			'A responsive recipe management application developed with React where users can search recipes, dynamically adjust servings, and interact with ingredient popups, built using React, Vite, Tailwind CSS, React Router, and static JSON architecture.',
+		githubUrl: 'https://github.com/ktunebe/react-recipe-book',
+		appUrl: 'https://kent-cookbook.netlify.app/',
+		imgSrc: '/project-screenshots/recipe-book.jpg',
+	},
+	{
 		title: "Web Wizard's Lair",
 		description:
 			'A coding challenge game developed with React in which users create an account, choose an avatar and solve coding problems in an embedded code editor. This utilizes React, GraphQL, MongoDB, Mongoose, Express, Node, and TailwindCSS, among other disciplines.',
