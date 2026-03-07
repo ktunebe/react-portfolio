@@ -166,9 +166,9 @@ export const projects = [
 	{
 		title: 'My Recipe Book',
 		description:
-			'A responsive recipe management application developed with React where users can search recipes, dynamically adjust servings, and interact with ingredient popups, built using React, Vite, Tailwind CSS, React Router, and static JSON architecture.',
+			'A responsive recipe management application developed with React where users can search recipes, dynamically adjust servings, and interact with ingredient popups, built using React, Vite, Tailwind CSS, React Router, and static JSON architecture and deployed statically on AWS with Amplify.',
 		githubUrl: 'https://github.com/ktunebe/react-recipe-book',
-		appUrl: 'https://kent-cookbook.netlify.app/',
+		appUrl: 'https://main.dxyk5m4fpxby4.amplifyapp.com/',
 		imgSrc: '/project-screenshots/recipe-book.jpg',
 	},
 	{
